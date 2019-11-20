@@ -21,7 +21,7 @@ testit::assert(is_beast2_installed())
 phylogeny  <- ape::read.tree(
   text = "(((A:8, B:8):1, C:9):1, ((D:8, E:8):1, F:9):1);"
 )
-ape::write.tree(phylogeny, file = "tree_true.fasta")
+ape::write.tree(phylogeny, file = "tree_true.fas")
 
 alignment_params <- create_alignment_params(
   sim_true_alignment_fun =
@@ -29,7 +29,7 @@ alignment_params <- create_alignment_params(
       branch_mutation_rate = 0.1,
       node_mutation_rate = 0.1
   ),
-  fasta_filename = "alignment_gen.fasta",
+  fasta_filename = "alignment_gen.fas",
   root_sequence = create_blocked_dna(length = 1000),
   rng_seed = rng_seed,
   fasta_filename = "true_alignment.fas"
@@ -70,7 +70,7 @@ twinning_params <- create_twinning_params(
     max_n_tries = 1000
   ),
   twin_tree_filename = "twin_tree.newick",
-  twin_alignment_filename = "twin_alignment.fasta",
+  twin_alignment_filename = "twin_alignment.fas",
   twin_evidence_filename = "twin_evidence.csv"
 )
 
