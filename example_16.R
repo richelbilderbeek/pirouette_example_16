@@ -29,7 +29,6 @@ alignment_params <- create_alignment_params(
       branch_mutation_rate = 0.1,
       node_mutation_rate = 0.1
   ),
-  fasta_filename = "alignment_gen.fas",
   root_sequence = create_blocked_dna(length = 1000),
   rng_seed = rng_seed,
   fasta_filename = "true_alignment.fas"
