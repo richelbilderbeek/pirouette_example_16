@@ -24,8 +24,8 @@ phylogeny  <- ape::read.tree(
 ape::write.tree(phylogeny, file = "tree_true.fas")
 
 alignment_params <- create_alignment_params(
-  sim_trall_fun =
-    get_sim_trall_with_lns_nsm_fun(
+  sim_tral_fun =
+    get_sim_tral_with_lns_nsm_fun(
       branch_mutation_rate = 0.1,
       node_mutation_rate = 0.1
   ),
